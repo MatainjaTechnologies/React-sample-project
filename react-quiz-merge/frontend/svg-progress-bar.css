@@ -1,0 +1,33 @@
+.timer{
+  transform: rotate(-90deg);
+}
+.circle {
+    transition: all 1s linear;
+    stroke: #666;
+    stroke-width: 4px;
+  }
+  #cont {
+    position: relative;
+    display: block;
+    height: 76px;
+    width: 76px;
+    border-radius: 100%;
+    float: right;
+  }
+  #cont:after {
+    position: absolute;
+    display: block;
+    height: 76px;
+    width: 76px;
+    left: 2px;
+    top: -1%;
+    /*box-shadow: inset 0 0 0.5em #909090;*/
+    content: attr(data-pct);
+    /*margin-top: -38px;
+    margin-left: -38px;*/
+    border-radius: 100%;
+    line-height: 76px;
+    font-size: 1.5em;
+    /*text-shadow: 0 0 0.5em black;*/
+    transition: all 1s linear;
+  }
